@@ -1,0 +1,9 @@
+Android Engineer
+
+Possess at least 3+ years of experience building native apps (required) 
+Have experience with design patterns in Android and Java 
+Are familiar, or interested in learning, functional programming and RxJava 
+Are familiar with testing in Android and writing easy-to-test code 
+Demonstrate strong communication skills and the ability to translate technical ideas into understandable concepts for others 
+Are naturally curious and committed to learning and skill-sharing 
+Are collaborative and cooperative

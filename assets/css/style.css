@@ -1,0 +1,682 @@
+ body {
+    font-family: "Montserrat", Arial sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #636262;
+    background-color: #eae8e5;
+    font-weight: lighter;
+ }
+ 
+ ul {
+    margin: 0;
+    padding: 0px;
+    list-style: none;
+ }
+ 
+ p {
+    font-family: 'Arial', sans-serif;
+    font-size: 15px;
+    line-height: 21px;
+    color: #7d7d7d;
+ }
+ 
+ ul li {
+    font-family: 'Arial', sans-serif;
+    font-size: 15px;
+    line-height: 27px;
+    color: #7d7d7d;
+    list-style-type: none;
+ }
+ 
+ img {
+    max-width: 100%;
+    height: auto;
+ }
+ 
+ .clear {
+    clear: both;
+ }
+ 
+ .btn-green {
+    font-family: "Montserrat";
+    background-color: #56b579;
+    margin-top: 30px;
+    color: white;
+    padding: 15px 23px 15px 23px;
+    border-radius: 3px;
+    font-size: 15px;
+    transition: all 0.4s ease;
+ }
+ 
+ .btn-green:hover {
+    background: #4aa66c;
+    color: #fff;
+ }
+ 
+ h2 {
+    font-family: 'Montserrat';
+    font-size: 30px;
+    font-weight: lighter;
+ }
+ 
+ .wooding{
+     background-image: url(assets/images/mobile-wood.png) no-repeat;
+     max-height: 100%;
+ }
+
+ /******* NAV *******/
+ 
+ #site-header {
+    position: absolute;
+    z-index: 102;
+    width: 100%;
+ }
+ 
+ #branding a img {
+    margin-top: 13px;
+    max-width: none !important;
+ }
+ 
+ @media (min-width: 1200px) {
+    #top-nav {
+        width: 1170px;
+    }
+ }
+ 
+ #top-nav {
+    padding: 8px 0px 8px 0px;
+    margin: 30px auto 0 auto;
+ }
+ 
+ .navbar {
+    border: 0 none;
+    border-radius: 0px;
+    border-bottom: 1px solid rgba(255, 255, 255, .3);
+ }
+ 
+ .navbar-nav {
+    margin: 0px;
+    margin-top: 6px;
+    text-align: center;
+ }
+ 
+ .navbar-nav li a {
+    font-family: 'Montserrat';
+    transition: all 0.8s ease;
+    font-size: 14x;
+ }
+ .navbar-default .navbar-nav > li > a {
+    color: #fff;
+ }
+ 
+ .nav-active {
+    color: #56b579 !important;
+ }
+ 
+ .navbar-nav li a:hover {
+    color: #56b579;
+ }
+ 
+ #top-nav.navbar-scroll-changed {
+    background: none;
+    margin: 0 auto;
+    border: 0;
+ }
+ 
+ a.btn-buy {
+    background-color: #56b579;
+    color: #ffffff !important;
+    padding: 15px 40px 15px 40px !important;
+    font-size: 15px;
+    border-radius: 3px;
+    margin-bottom: 2px;
+    transition: all 0.5s ease;
+    overflow: visible;
+    margin-left: 20px;
+ }
+ 
+ a.btn-buy:hover {
+    background-color: #4aa66c !important;
+    color: #ffffff;
+ }
+
+ /******** END NAV *******/
+
+ /****** FEATURES *********/
+ 
+ #features {
+    background-color: #f5f2ee;
+    overflow: hidden;
+    padding-bottom: 80px;
+ }
+ 
+ .title {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 70px;
+ }
+ 
+ .title h2 {
+    padding-bottom: 15px;
+    position: relative;
+    font-family: 'Montserrat';
+    font-weight: lighter;
+ }
+ 
+ .title h2:after {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 2px;
+    width: 60px;
+    background-color: #56b579;
+    bottom: 0;
+    left: 50%;
+    margin-left: -40px;
+ }
+ 
+ .title p {
+    color: #8e8e8e;
+    padding-top: 20px;
+ }
+ 
+ .text-center {
+    text-align: center;
+ }
+ 
+ span.icon {
+    font-size: 35px;
+    position: absolute;
+    border-radius: 50%;
+    background-color: #fff;
+    width: 60px;
+    height: 60px;
+    padding-top: 14px;
+    text-align: center;
+    transition: all 0.5s ease;
+ }
+ 
+ span.icon:hover {
+    background-color: #56b579;
+    color: white;
+ }
+ 
+ ul.items {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 60px;
+ }
+ 
+ ul.items li {
+    padding: 0px 30px 60px 30px;
+ }
+
+
+ul.item-list-right {
+   float: left;
+ }
+ 
+ ul.item-list-right li {
+    text-align: left;
+    position: relative;
+ }
+
+ ul.item-list-right span.icon {
+    margin-left: 280px;
+    margin-top: -3px;
+ }
+
+
+  ul.item-list-left {
+    float: left;
+ }
+ 
+ ul.item-list-left li {
+    text-align: left;
+    position: relative;
+ }
+ 
+ ul.item-list-left span.icon {
+    margin-left: -72px;
+    margin-top: -3px;
+ }
+ 
+ ul.items h4 {
+    line-height: 25px;
+ }
+ 
+ ul.items h4 mark {
+    background: none;
+    font-family: 'Montserrat' sans-serif;
+    color: #5a5a5a !important;
+ }
+
+ /****** CAROUSEL *********/
+
+ /* Carousel base class */
+ 
+ .carousel {
+    height: auto;
+ }
+ /* Since positioning the image, we need to help out the caption */
+ 
+ .carousel-caption {
+    z-index: 10;
+ }
+ /* Declare heights because of positioning of img element */
+ 
+ .carousel .item {
+    height: auto;
+    background-color: #777;
+ }
+ 
+ .carousel-inner > .item > img {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: auto;
+    max-height: 700px !important
+ }
+
+ /****** MEDIA QUERIES *********/
+ 
+ @media (max-width: 820px) {
+
+  .item-list-right { 
+    margin-top: -70px;
+    }
+
+     #features {
+        padding-bottom: 30px;
+    }
+
+    ul.items li {
+        display: block;
+        text-align: center !important;
+    }
+    ul.items li span.icon {
+        position: relative !important;
+        margin-left: 10px;
+        padding-left: 11px;
+        padding-right: 11px;
+        padding-bottom: 5px;
+        padding-top: 13px;
+    }
+    .caption-content {
+        text-align: center;
+        margin-bottom: 50px;
+        clear: both;
+        padding-top: 20px !important;
+        padding-left: 45px !important;
+        padding-right: 45px !important;
+    }
+    .caption-content h2:after {
+        margin: 0 auto;
+    }
+    #team .member {
+        width: 100%;
+        max-width: 450px;
+        margin: 0 auto 60px !important;
+        float: none;
+        padding: 0 25px;
+        text-align: center;
+    }
+    #call-to-action h3 {
+        padding: 0px !important;
+        font-size: 20px;
+        line-height: 27px;
+    }
+    #call-to-action {
+        text-align: center;
+        padding: 15px !important;
+    }
+    #call-to-action a.btn-green {
+        margin-bottom: 20px;
+    }
+    .carousel-caption {
+        bottom: 35px;
+    }
+    .carousel-caption h1 {
+        font-size: 21px;
+    }
+    ul.footer-links li {
+        display: block !important;
+        padding-bottom: 17px;
+    }
+    .carousel-caption a.btn-green {
+        display: none;
+    }
+    section#facts .caption-content {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    section#facts ul.facts {
+        text-align: center !important;
+        margin: 0 auto !important;
+    }
+    section#facts ul.facts li {
+        padding-left: 15px !important;
+    }
+ }
+
+ /****** END MEDIA QUERIES *********/
+ 
+
+ 
+ #features .ipad {
+    overflow: hidden;
+ }
+ 
+ #features .ipad img.ipad-features {
+    display: block;
+    margin: 0 auto;
+    max-width: 80%;
+ }
+ 
+
+ /****** END FEATURES *********/
+
+ /****** CAPTIONS *********/
+ 
+ .caption {
+    background-color: #ffffff;
+    overflow: hidden;
+ }
+ 
+ .caption-content h2:after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 60px;
+    background-color: #56b579;
+    margin-top: 20px;
+ }
+ 
+ .caption-content {
+    padding: 70px 70px 0px 70px;
+    clear: clearfix;
+ }
+ 
+ .caption-content p {
+    padding-top: 30px;
+ }
+ 
+ .caption-content ul {
+    padding-top: 30px;
+ }
+ 
+ .left {
+    padding: 0px;
+ }
+ 
+ .left img {
+    margin-left: 14px;
+ }
+ 
+ .right {
+    float: right;
+    padding: 0px;
+ }
+ /****** END CAPTIONS *********/
+
+ /****** CALL TO ACTION *********/
+ 
+ #call-to-action {
+    background-color: #4e4343;
+    padding: 20px 30px 30px 60px;
+ }
+ 
+ #call-to-action h3 {
+    color: #fff;
+    font-weight: normal;
+    vertical-align: middle;
+ }
+ 
+ #call-to-action a.btn-green {
+    background-color: #56b579;
+    border: none;
+    font-size: 17px;
+    margin-top: 10px;
+    color: white;
+    padding: 15px 23px 15px 23px;
+    border-radius: 4px;
+ }
+ 
+ #call-to-action h3 {
+    padding-left: 30px;
+    font-family: 'Montserrat';
+    font-weight: lighter;
+    padding-top: 5px;
+ }
+ /****** END CALL TO ACTION *********/
+
+ /************** TEAM ********************/
+ 
+ #team {
+    background-color: #fff;
+    overflow: hidden;
+    padding-bottom: 70px;
+ }
+ 
+ .member {
+    float: left !important;
+    margin-bottom: 60px;
+    position: relative;
+    padding: 0;
+    width: 30%;
+    margin-left: 2.5%;
+ }
+ 
+ .member a h3 {
+    color: #5a5a5a;
+ }
+ 
+ .member a h3:hover {
+    text-decoration: underline;
+    color: #8972af;
+ }
+ 
+ .member span.profession {
+    font-size: 15px;
+    color: #8e8e8e;
+ }
+ 
+ .member img.headshot {
+    display: block;
+    margin: 0 auto;
+    border: 1px solid #fff;
+ }
+ 
+ .member a:hover img.headshot {
+    border-color: #8972af;
+    transition: border-color 0.2s ease-in-out;
+ }
+ 
+ @media (max-width: 820px) {}
+ 
+ #team .member p.social {
+    padding-top: 15px;
+    margin-left: -10px;
+ }
+ 
+ #team .member a span.icon-social {
+    font-family: 'dorin007';
+    color: #bababa;
+    font-size: 23px;
+    padding-left: 10px;
+ }
+ 
+ #team .member a span.icon-social:hover {
+    color: #8972af;
+ }
+ 
+ #team .member a:hover {
+    text-decoration: none !important;
+ }
+ /************** END TEAM ********************/
+
+ /************ FACTS *************/
+ 
+ section#facts {
+    background-color: #f5f2ee;
+    overflow: hidden;
+    padding-bottom: 40px;
+ }
+ 
+ section#facts .caption-content {
+    background-color: #8972af;
+    color: #fff !important;
+    padding-bottom: 50px;
+    margin-left: -15px;
+ }
+ 
+ section#facts .caption-content p {
+    color: #fff !important;
+ }
+ 
+ section#facts ul.facts li {
+    display: inline-block;
+    padding-left: 45px;
+    color: #fff !important;
+    text-align: center;
+ }
+ 
+ section#facts ul.facts li:first-child {
+    padding-left: 0px;
+ }
+ /************ END FACT ************/
+ /************** NEWSLETTER ********************/
+ 
+ #newsletter {
+    background-color: #f5f2ee;
+    overflow: hidden;
+    padding-bottom: 50px;
+ }
+ 
+ .nl-form {
+    text-align: center;
+    width: 280px;
+    margin: 0px auto;
+    position: relative;
+    top: 0;
+ }
+ 
+ input.subscribe-email {
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    margin: 0 0 10px 0;
+    border: 1px solid #c4c4c4;
+    border-radius: 2px;
+    text-indent: 10px;
+    color: #000;
+    outline: none;
+    font-size: 16px;
+    transition: all 0.4s ease;
+ }
+ 
+ input.subscribe-email:focus {
+    box-shadow: inset 0 3px 4px rgba(0, 0, 0, 0.2);
+    border: 1px solid #9d9d9d;
+ }
+ 
+ button.submit-email {
+    font-family: 'Montserrat';
+    background-color: #56b579;
+    display: block;
+    border: none;
+    width: 100%;
+    padding: 10px 0px 10px 0px;
+    font-size: 17px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    color: white;
+    transition: all 0.5s ease;
+ }
+ 
+ button.submit-email:hover {
+    background: #4aa66c;
+ }
+
+ /************** END NEWSLETTER ********************/
+
+ /************** FOOTER ********************/
+ 
+ #footer {
+    background: #fff;
+    overflow: hidden;
+ }
+ 
+ #footer .title {
+    margin-bottom: 30px !important;
+ }
+ 
+ #footer p.social {
+    margin-top: 30px;
+ }
+ 
+ #footer p.social a {
+    color: #bababa;
+    font-size: 23px;
+    padding-left: 21px;
+ }
+ 
+ #footer p.social a:first-child {
+    padding-left: 0px;
+ }
+ 
+ #footer p.social a:hover {
+    text-decoration: none;
+    color: #8972af;
+ }
+ 
+ ul.footer-links {
+    margin-top: 50px;
+ }
+ 
+ #footer .title p {
+    color: #8e8e8e;
+    padding-top: 10px !important;
+ }
+ 
+ ul.footer-links li {
+    display: inline-block;
+    padding-left: 25px;
+ }
+ 
+ ul.footer-links li a {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    line-height: 27px;
+    color: #7d7d7d;
+    list-style-type: none;
+    transition: all 0.7s ease;
+    font-size: 14x;
+ }
+ 
+ ul.footer-links li a:hover {
+    text-decoration: none;
+    color: #56b579;
+ }
+ 
+ #footer .navbar-brand {
+    float: none !important;
+ }
+ 
+ #top-nav {
+    transition: all 0.2s linear 0s;
+    background: #fff;
+ }
+ 
+ .fixed-header {
+    padding: 0 0 5px !important;
+    background: #fff !important;
+    box-shadow: 0 6px 4px -4px rgba(0,0,0,0.1);
+ }
+ 
+ .fixed-header .navbar-nav > li > a {
+    line-height: 8px !important;
+    color: #636262;
+ }
+ 
+ /************** FOOTER ********************/

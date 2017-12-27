@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>WordsCloud</title>
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet" media="screen">
+	<link href="assets/css/new_styles.css" rel="stylesheet" media="screen">
+  <link href="assets/css/hover-min.css" rel="stylesheet" media="screen">
+  <link href="https://fontastic.s3.amazonaws.com/F5o4g5qMFkCpMtrSwjzw3b/icons.css" rel="stylesheet">
+  <link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+	
+</head>
+<body>
+<div id="page">
+    <div class="container">
+    <header id="site-header">
+            <div class="row">
+                <nav id="top-nav" class="navbar navbar-default navbar-fixed-top navbar-scroll-changed" role="navigation">
+                <div class="container">
+                    <div class="col-sm-1 col-lg-2 col-xs-12">
+                        <div id="branding">
+                            <a href="#" title="Home is where the heart is" rel="home">
+                                <img id="logo" src="assets/images/worldCloud-logo.png" class="hidden-xs" alt="Home is where the heart is">
+                                <img src="assets/images/worldCloud-logo-active.png" class="hidden-md hidden-sm hidden-lg" alt="Home is where the heart is">
+                            </a>
+                        </div><!-- /.branding -->
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div><!-- /.navbar-header -->
+                    </div><!-- /.col-sm-1 col-lg-1 col-xs-12 -->
+                  
+                    <div class="col-sm-11 col-lg-10 col-xs-12">
+                          <div class="navbar-collapse collapse" id="bs-example-navbar-collapse-1" aria-expanded="true" style="height: 1px;">
+                              <ul id="menu-main-top-navigation" class="nav navbar-nav navbar-right">
+                                  <li><button id="uploadFile">Import a File</button></li>
+                              </ul> 
+                            </div><!-- /.navbar-collapse --> 
+                     </div><!-- /.col-sm-8 col-lg-8 col-xs-12 -->
+                     </div><!-- /.row -->
+                </nav>
+            </div><!-- /.row -->
+    </header>
+
+            
+          <!-- Main component for a primary marketing message or call to action  -->
+          <div id="myCarousel" class="carousel slide" data-ride="carousel">
+          <!-- Indicators  -->
+          <ol class="carousel-indicators dotstyle dotstyle-hop">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1" class=""></li>
+            <li data-target="#myCarousel" data-slide-to="2" class=""></li>
+          </ol>
+          <div class="carousel-inner" role="listbox">
+            <div class="item active">
+              <img class="first-slide" src="assets/images/slide1.jpg" alt="First slide">
+              <div class="container">
+                <div class="carousel-caption">
+                  <h1>Learn, Design, Repeat</h1>
+                  <p>Awesome, effective one product landing page very easy to operate</p>
+                </div><!-- /.carousel-caption -->
+              </div><!-- /.container -->
+            </div><!-- /.item-active -->
+
+            <div class="item">
+             <img class="second-slide" src="assets/images/slide2.jpg" alt="Second slide">
+              <div class="container">
+                <div class="carousel-caption">
+                  <h1>This is your app</h1>
+                   <p>Awesome, effective one product landing page very easy to operate</p>
+            <!--      <p><a class="btn btn-lg btn-green" href="#" role="button">See more</a></p> -->
+                </div><!-- /.carousel-caption -->
+              </div><!-- /.container -->
+            </div><!-- /.item -->
+
+            <div class="item">
+              <img class="third-slide" src="assets/images/slide3.jpg" alt="Third slide">
+              <div class="container">
+                <div class="carousel-caption">
+                  <h1>One more for good measure.</h1>
+                  <p>Awesome, effective one product landing page very easy to operate</p>
+                  
+                </div><!-- /.carousel-caption -->
+              </div><!-- /.container -->
+            </div><!-- /.item -->
+          </div><!-- /.carousel-inner -->
+        </div><!-- /.myCarousel -->
+
+
+        <section id="features">
+          <div class="title">
+            <h2>Wonderful Words Cloud Application</h2>
+            <p>Best practice to make your dream using words. <br />You can bring file from your computer</p>
+          </div><!-- /.title -->
+
+          <div class="row">
+
+            <div class="col-sm-3 col-xs-12">
+            
+              <ul class="items item-list-right">
+                <li>
+                  <h4 style="text-align: center;"><mark>Load Data From Local Device</mark> </h4>
+                  <!-- code below -->
+                  <select id="m_filelist" size="10">
+
+                  </select>
+
+                  <br><br>
+                  <p style="text-align: center;" id="mWordCloudOne"><button>Generate a WordCloud</button></p>
+                  <form id="myfileform" action="upload.php" method="post" enctype="multipart/form-data">
+                      <input type="file" name="fileToUpload" id="fileToUpload" accept=".txt" />
+                  </form>
+                </li>
+              </ul><!-- /.item-list-right -->
+            </div><!-- /.col-sm-4 -->
+
+          <div class="col-sm-9 col-xs-12 ipad">
+              <!-- WordCloud exists -->
+              <iframe src="http://localhost/wordCloud/index.html" name="frameFile" style="width: 100%; height: 550px;" frameBorder="0" scrolling="no" allowfullscreen></iframe>
+
+          </div><!-- /.col-sm-4 -->
+
+          </div><!-- /.row -->
+        </section><!-- /#features -->
+
+
+        <section id="features">
+          <div class="title">
+            <h2>Next WordCloud. WOW!!! Great</h2>
+          </div><!-- /.title -->
+
+          <div class="row">
+
+            <div class="col-sm-3 col-xs-12">
+            
+              <ul class="items item-list-right">
+                <li>
+                  <h4 style="text-align: center;"><mark>Select the multiple words from list</mark> </h4>
+                  <!-- code below -->
+                  <select id="m_wordview" style="width: 100%;" size="10" multiple="multiple" >
+                  </select>
+
+                  <br><br>
+                  <p style="text-align: center;"><button id="mWordCloudTwo">Generate a WordCloud</button></p>
+                </li>
+              </ul><!-- /.item-list-right -->
+            </div><!-- /.col-sm-4 -->
+
+          <div class="col-sm-9 col-xs-12 ipad">
+              <!-- WordCloud exists -->
+              <iframe src="http://localhost/wordCloud/index.html" name="frameWord" style="width: 100%; height: 500px;" frameBorder="0" scrolling="no" allowfullscreen></iframe>
+              
+          </div><!-- /.col-sm-4 -->
+
+          </div><!-- /.row -->
+        </section><!-- /#features -->
+
+
+        <div id="footer">
+          <div class="title">
+            <div class="row">  
+              <a class="navbar-brand" href="#"><img src="assets/images/worldCloud-logo-active.png" data-active-url="img/logo-active.png" alt=""></a>
+            </div><!-- /.row --> 
+
+            <div class="row">
+                <p class="social">
+                    <a href="#"><span class="icon-social icon-instagram"></span></a>
+                    <a href="#"><span class="icon-social icon-social-pinterest"></span></a>
+                    <a href="#"><span class="icon-social icon-social-facebook"></span></a>         
+                    <a href="#"><span class="icon-social icon-social-twitter"></span></a>                              
+                </p>
+            </div><!-- /.row -->
+            
+            <p class="copyright">
+              © Copyright 2017 WordCloud - All Rights Reserved.
+            </p>
+        </div><!-- /.title -->
+        </div><!-- /.footer -->
+
+    </div><!-- /.container -->
+</div><!-- /#page -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/core.js"></script>
+</body>
+</html>

@@ -1,0 +1,5 @@
+if i click *import a file* button
+this is file input dialog sound good
+now go to step 2
+left is web logo
+right is button

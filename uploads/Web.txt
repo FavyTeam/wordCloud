@@ -1,0 +1,12 @@
+Senior Front End Engineer
+
+You have 5+ years professional experience as a software engineer. 
+Expert working knowledge of modern JavaScript, SCSS and HTML5. 
+Experience working with React, Redux, and GraphQL or similar frameworks. 
+Familiarity with server-side MVC web frameworks, such as Ruby on Rails. 
+Familiarity with Git and agile methodologies. 
+Demonstrated experience independently leading projects from start to finish. 
+Interest in pair programming and mentoring engineers. 
+Passion for writing tests to ensure delivering high-quality software. 
+Comfortable prototyping ideas and evolving them based on user feedback. 
+Experience working with designers to craft beautiful, user-centric interfaces.

@@ -1,0 +1,10 @@
+Senior Fullstack Engineer
+
+You have 5+ years professional experience as a software engineer. 
+Expert working knowledge of Ruby & JavaScript. 
+Experience working with Ruby on Rails, React, Redux, and GraphQL or similar frameworks. 
+Experience working with data stores - we use MySQL, Redis, Elasticsearch, Kinesis, and Redshift Familiarity with Git and agile methodologies. 
+Demonstrated experience independently leading projects from start to finish. 
+Interest in pair programming and mentoring engineers. 
+Passion for writing tests to ensure delivering high-quality software. 
+Comfortable prototyping ideas and evolving them based on user feedback.
