@@ -4,7 +4,7 @@ $target_dir = "uploads/";
 $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
 
 $uploadOk = 1;
-$imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
+$textFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
 
 // Check if file already exists
 if (file_exists($target_file)) {
@@ -27,7 +27,7 @@ if ($_FILES["fileToUpload"]["size"] > 500000) {
     $uploadOk = 0;
 }
 // Allow certain file formats
-if($imageFileType != "txt" ) {
+if($textFileType != "txt" ) {
 	?>
 	<script type="text/javascript">
 		alert("Sorry, only TXT files are allowed.");

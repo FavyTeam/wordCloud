@@ -4,6 +4,7 @@ var firstSence = 0;
 var secondSence = 0;
 
 $(function(){
+
     $('#uploadFile').click(function(){
         $('#fileToUpload').click();
     });
@@ -80,4 +81,36 @@ $(function(){
     	frame.location.reload();
 	});
 
+	$('#uploadUrls').click(function(){
+		var fileUrls = prompt("Write your web urls that contains words. (type must be .txt)", "");
+
+		if (fileUrls){
+			var filename = fileUrls.split("/").pop();
+
+			var ext = filename.slice(-3);
+
+			if (ext == "txt"){
+				$.ajax({
+					type: "POST",
+		            url : "../../uploadUrls.php",
+		            dataType: "json",
+		            data: {functionname: 'downloadUrlToFile', arguments: [fileUrls, filename]},
+		            success : function (data) {
+		            	//Here is success allow.....
+		            	//console.log(data);
+
+		            	if (data["result"] == "Uploaded"){
+		            		alert("File uploaded.");
+		            	}
+		            }
+		        });
+			}else{
+				alert("Please upload correct file, Must be txt file.");
+			}
+			
+		}
+		
+	});
+
 });
+
